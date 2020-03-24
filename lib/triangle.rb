@@ -16,6 +16,7 @@ class Triangle
    else @one <= 0 || @two <= 0 || @three <= 0
       raise TriangleError
    end
+ end
    class TriangleError < StandardError
    end
 end
