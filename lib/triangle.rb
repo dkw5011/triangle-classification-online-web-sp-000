@@ -11,7 +11,7 @@ class Triangle
    :equilateral
    elsif @one == @two && @one != @three && @two != @three || @two == @three && @one != @three && @one != @two || @one == @three && @one != @two && @two != @three && ((@one + @two) > @three && (@one + @three) > @two && (@two + @three) > @one)
    :isosceles
-   elsif @one != @two && @one != @three && @two != @three && (@one && @two && @three) > 0
+   elsif @one != @two && @one != @three && @two != @three && (@one && @two && @three) > 0 
    :scalene
    else
       raise TriangleError
