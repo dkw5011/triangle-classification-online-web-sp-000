@@ -13,7 +13,7 @@ class Triangle
    :isosceles
    elsif @one != @two && @one != @three && @two != @three
    :scalene
-   else @one <= 0 || @two <= 0 || @three <= 0
+   else @one <= 0 && @two <= 0 && @three <= 0
       raise TriangleError
    end
  end
