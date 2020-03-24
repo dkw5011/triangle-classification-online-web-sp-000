@@ -7,13 +7,13 @@ class Triangle
  end
  
  def kind
-   if @one == @two && @two == @three && @one == @three
+   if @one == @two && @two == @three && @one == @three && @one=!
    :equilateral
    elsif @one == @two && @one != @three && @two != @three || @two == @three && @one != @three && @one != @two || @one == @three && @one != @two && @two != @three
    :isosceles
    elsif @one != @two && @one != @three && @two != @three
    :scalene
-   else @one <= 0 && @two <= 0 && @three <= 0
+   else
       raise TriangleError
    end
  end
